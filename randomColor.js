@@ -7,6 +7,30 @@ function getRandomColor() {
     return color;
 }
 
+const fonts = [
+    'IBM Plex Serif',
+    'Fira Sans',
+    'Astloch',
+    'Major Mono Display',
+    'Playfair Display',
+    'Source Serif Pro',
+    'Roboto Mono',
+    'Libre Franklin',
+];
+
+function randomFont(fonts) {
+    return fonts[Math.floor(Math.random() * fonts.length)];
+}
+
+const size = [
+    '1rem',
+    '1.25rem',
+    '1.5rem',
+];
+
+function randomSize(size) {
+    return size[Math.floor(Math.random() * size.length)];
+}
 
 function getCorrectTextColor(hex) {
     threshold = 128; /* about half of 256. Lower threshold equals more dark text on dark background  */
@@ -28,4 +52,6 @@ function setRandomColor() {
     bgColor = getRandomColor();
     $(":root").css("--colorBg", bgColor);
     $(":root").css("--colorTxt", getCorrectTextColor(bgColor));
+    $("body").css("font-family", randomFont(fonts));
+    $(":root").css("--baseValue", randomSize(size));
 }
