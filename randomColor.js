@@ -1,26 +1,49 @@
-function getRandomColor() {
-    var letters = '0123456789ABCDEF';
-    var color = '#';
-    for (var i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
+// function getRandomColor() {
+//     var letters = '0123456789ABCDEF';
+//     var color = '#';
+//     for (var i = 0; i < 6; i++) {
+//         color += letters[Math.floor(Math.random() * 16)];
+//     }
+//     return color;
+// }
+
+const color = [
+    '#0000ff',
+    '#000000',
+    '#ffffff'
+];
+
+function getRandomColor(color) {
+    return color[Math.floor(Math.random() * color.length)];
 }
 
 const fonts = [
     'IBM Plex Serif',
-    'Fira Sans',
-    'Astloch',
-    'Major Mono Display',
-    'Playfair Display',
-    'Source Serif Pro',
-    'Roboto Mono',
-    'Libre Franklin',
+    'IBM Plex Sans',
+    'IBM Plex Mono',
+    // 'Volkhov',
+    // 'Alegreya',
+    // 'Fira Sans Condensed',
+    // 'Fira Sans',
+    // 'Barlow',
+    // 'Karla',
+    // 'Muli',
+    // 'PT Serif',
+    // 'Roboto Mono',
+    // 'Libre Franklin',
+    // 'Lora',
+    // 'Poppins',
+    // 'Merriweather',
+    // 'Raleway',
+    // 'Montserrat',
+    // 'Open Sans'
 ];
 
 function randomFont(fonts) {
     return fonts[Math.floor(Math.random() * fonts.length)];
 }
+
+console.log(randomFont(fonts));
 
 const size = [
     '1rem',
@@ -49,7 +72,7 @@ function getCorrectTextColor(hex) {
 }
 
 function setRandomColor() {
-    bgColor = getRandomColor();
+    bgColor = getRandomColor(color);
     $(":root").css("--colorBg", bgColor);
     $(":root").css("--colorTxt", getCorrectTextColor(bgColor));
     $("body").css("font-family", randomFont(fonts));

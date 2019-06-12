@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,400i,600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i,600&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,600&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css?family=Astloch:400,400i,600&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css?family=Major+Mono+Display:400,400i,600&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,600&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css?family=Chivo:400,400i,600&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css?family=Alegreya:400,400i,700|Barlow:400,400i,700|Fira+Sans+Condensed:400,400i,700|Fira+Sans:400,400i,700|Karla:400,400i,700|Libre+Franklin:400,400i,700|Lora:400,400i,700|Merriweather:400,400i,700|Montserrat:400,400i,700|Muli:400,400i,700|Open+Sans:400,400i,700|PT+Serif:400,400i,700|Poppins:400,400i,700|Raleway:400,400i,700|Roboto+Mono:400,400i,700|Volkhov:400,400i,700&display=swap'); */
+
 :root {
 	--colorBg: #fff;
 	--colorTxt: #000;
@@ -11,7 +20,7 @@
 	--spacing10: calc(var(--fontSize10)*var(--lineHeightCopy));
 	--spacing20: calc(var(--spacing10)*1);
 	--fontWeight10: 400;
-	--fontWeight20: 600;
+	--fontWeight20: 700;
 	--transitionDur10: 100ms;
 	--bgImg: none;
 }
